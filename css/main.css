@@ -101,6 +101,7 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
+    
   }
 
 /* Backround images */
@@ -117,22 +118,38 @@ html {
   /* Headers */
   .header {
     padding: 80px;
-     /* text-shadow:
-		-.1px -.1px 0 var(--accent-color),
-		.1px -.1px 0 var(--accent-color),
-		-.1px .1px 0  var(--accent-color),
-    .1px .1px 0  var(--accent-color); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../images/banner1.jpg);
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0  black,
+    1px 1px 0  black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/banner1.jpg);
     width: 100%;
-    height: 25vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
     text-align: center;
-    color: var(--accent-color);
+    color: white;
     font-size: 3rem;
-    font-family: 'special_eliteregular';
+    font-family: 'open_sanssemibold';
     text-transform: uppercase;
+  }
+
+  .header2 {
+    padding: 50px;
+     text-shadow:
+		-1px -1px 0 var(--accent-color),
+		1px -1px 0 var(--accent-color),
+		-1px 1px 0  var(--accent-color),
+    1px 1px 0  var(--accent-color);
+    background-color: #000000;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 3rem;
+    font-family: 'open_sanssemibold';
+    text-transform: uppercase;
+    
   }
 
 
@@ -146,12 +163,20 @@ html {
     }
   }
 
-  .container {
+
+
+
+
+
+/* Columns  */
+  
+
+.container {
     margin: 0 auto;
     padding: 40px 10px;
     max-width: 1000px;
     font-family: 'open_sansregular'; 
-    background: #ffffff; 
+    background:  white; 
     color: rgb(0, 0, 0);
     
   }
@@ -167,6 +192,8 @@ html {
 .one-third,
 .two-thirds,
 .one-fourth,
+.seventy-percent
+.thirty-percent
 .half {
   width: 100%;
 }
@@ -187,10 +214,26 @@ html {
     .two-thirds {
       width: calc(100% / 3 * 2);
     }
+    .seventy-percent {
+      width: 70%;
+    }
+    .thirty-percent {
+      width: 30%;
+    }
     .column {
       float: left;
     }
   }
+
+
+
+
+
+
+
+/* navigation bar */
+
+
 
   .navigation {
     height: 70px;
@@ -227,9 +270,11 @@ html {
   }
   
   nav {
-    float: right;
+    float:right;
   }
+
   
+    
   nav ul {
     list-style: none;
     margin: 0;
@@ -240,6 +285,8 @@ html {
     float: left;
     position: relative;
   }
+
+ 
   
   nav ul li a,
   nav ul li a:visited {
@@ -247,7 +294,7 @@ html {
     padding: 0 20px;
     line-height: 70px;
     background: var(--main-color);
-    color: var(--accent-color);
+    color: white;
     text-decoration: none;
     font-family: 'open_sansregular';
   }
@@ -346,4 +393,27 @@ html {
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Content styling */
+
+  .block-img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  body {
+    background-color: gray;
   }
